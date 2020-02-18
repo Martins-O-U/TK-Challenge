@@ -55,6 +55,7 @@ def quick_sort(array, start, end):
     quick_sort(array, p+1, end)
 
 
+#array = [29,99,27,41,66,28,44,78,87,19,31,76,58,88,83,97,12,21,44]
 array = [24, 44, 12, 99, 3, 56]
 quick_sort(array, 0, len(array) - 1)
 print(array)
