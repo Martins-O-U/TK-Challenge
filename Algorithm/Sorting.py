@@ -50,8 +50,26 @@ def binary_search():
                 print("Still Searching")
 
 
-binary_search()
+# binary_search()
 
+def binarySearch(lst, val):
+    first = 0
+    last = len(lst)-1
+
+    while first <= last:
+        midpoint = (first + last)//2
+        if lst[midpoint] == int(val):
+            print(f'"Found, value = {lst[midpoint]}')
+            break
+        elif int(val) < lst[midpoint]:
+            last = midpoint-1
+        elif int(val) > lst[midpoint]:
+            first = midpoint+1
+    else:
+        print(f"{val} is not in the given array")
+
+
+binarySearch(chosen_Range, chosen_input)
 
 print("=========== Insertion_Sort ================")
 
